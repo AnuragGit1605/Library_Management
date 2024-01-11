@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{30F83842-C247-44F7-A13D-1E1B799ADA88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Library.My.MyApplication</StartupObject>
+    <RootNamespace>Library</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Library.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Library.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bk.Designer.vb">
+      <DependentUpon>bk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="books.Designer.vb">
+      <DependentUpon>books.vb</DependentUpon>
+    </Compile>
+    <Compile Include="books.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issue.Designer.vb">
+      <DependentUpon>issue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="issue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_page.Designer.vb">
+      <DependentUpon>login_page.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainpage.Designer.vb">
+      <DependentUpon>mainpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="oldbk.Designer.vb">
+      <DependentUpon>oldbk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="oldbk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oldstd.Designer.vb">
+      <DependentUpon>Oldstd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Oldstd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pb.Designer.vb">
+      <DependentUpon>pb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pb1.Designer.vb">
+      <DependentUpon>pb1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pb1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="re.Designer.vb">
+      <DependentUpon>re.vb</DependentUpon>
+    </Compile>
+    <Compile Include="re.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="std.Designer.vb">
+      <DependentUpon>std.vb</DependentUpon>
+    </Compile>
+    <Compile Include="std.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students.Designer.vb">
+      <DependentUpon>Students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bk.resx">
+      <DependentUpon>bk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="books.resx">
+      <DependentUpon>books.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issue.resx">
+      <DependentUpon>issue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_page.resx">
+      <DependentUpon>login_page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainpage.resx">
+      <DependentUpon>mainpage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\x86\Debug\Library.Admin.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.bk.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.books.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.issue.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.login_page.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.mainpage.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.oldbk.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.Oldstd.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.pb.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.pb1.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.re.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.std.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\Library.Students.resources" />
+    <EmbeddedResource Include="oldbk.resx">
+      <DependentUpon>oldbk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oldstd.resx">
+      <DependentUpon>Oldstd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pb.resx">
+      <DependentUpon>pb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pb1.resx">
+      <DependentUpon>pb1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="re.resx">
+      <DependentUpon>re.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="std.resx">
+      <DependentUpon>std.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students.resx">
+      <DependentUpon>Students.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\Library.vshost.exe.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Debug\GenerateResource.read.1.tlog" />
+    <None Include="obj\x86\Debug\GenerateResource.write.1.tlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\login_bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\loading1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\loading2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\bg2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\loading4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\loading3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\book1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\book2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\book4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\book5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Login icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\book_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\back_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\newstd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\student1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\oldbk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\newbk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Library.exe" />
+    <Content Include="bin\Debug\Library.pdb" />
+    <Content Include="bin\Debug\Library.vshost.exe" />
+    <Content Include="bin\Debug\Library.xml" />
+    <Content Include="obj\x86\Debug\Library.exe" />
+    <Content Include="obj\x86\Debug\Library.pdb" />
+    <Content Include="obj\x86\Debug\Library.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\Library.xml" />
+    <Content Include="obj\x86\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\af-ZA\" />
+    <Folder Include="obj\x86\Debug\af-ZA\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
